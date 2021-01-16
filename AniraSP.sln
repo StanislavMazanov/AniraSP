@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniraSP.Console", "AniraSP.Console\AniraSP.Console.csproj", "{94755F40-E962-40C2-B95E-C1F30B8736EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94755F40-E962-40C2-B95E-C1F30B8736EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94755F40-E962-40C2-B95E-C1F30B8736EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94755F40-E962-40C2-B95E-C1F30B8736EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94755F40-E962-40C2-B95E-C1F30B8736EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FBA3CEC9-FBEC-4CCE-8DA3-92DFA410A021}
+	EndGlobalSection
+EndGlobal

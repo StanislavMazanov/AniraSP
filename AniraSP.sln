@@ -5,6 +5,14 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniraSP.Console", "AniraSP.Console\AniraSP.Console.csproj", "{94755F40-E962-40C2-B95E-C1F30B8736EA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AniraSP.Core", "AniraSP.Core", "{3504CB1F-6218-4030-8FE9-B5C7274F7C40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniraSP.BLL", "AniraSP.Core\AniraSP.BLL\AniraSP.BLL.csproj", "{F1E46343-732B-43A0-A504-AEEE8DC6C8F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniraPS.Clients", "AniraPS.Clients\AniraPS.Clients.csproj", "{783CA2BC-ABF5-4E8D-8309-714E9CE61711}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpWebClient", "AniraSP.Core\HttpWebClient\HttpWebClient.csproj", "{FF893C9B-6AA2-4610-B7E6-A75E90B888B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,11 +23,27 @@ Global
 		{94755F40-E962-40C2-B95E-C1F30B8736EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94755F40-E962-40C2-B95E-C1F30B8736EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94755F40-E962-40C2-B95E-C1F30B8736EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1E46343-732B-43A0-A504-AEEE8DC6C8F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1E46343-732B-43A0-A504-AEEE8DC6C8F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1E46343-732B-43A0-A504-AEEE8DC6C8F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1E46343-732B-43A0-A504-AEEE8DC6C8F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{783CA2BC-ABF5-4E8D-8309-714E9CE61711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{783CA2BC-ABF5-4E8D-8309-714E9CE61711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{783CA2BC-ABF5-4E8D-8309-714E9CE61711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{783CA2BC-ABF5-4E8D-8309-714E9CE61711}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF893C9B-6AA2-4610-B7E6-A75E90B888B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF893C9B-6AA2-4610-B7E6-A75E90B888B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF893C9B-6AA2-4610-B7E6-A75E90B888B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF893C9B-6AA2-4610-B7E6-A75E90B888B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBA3CEC9-FBEC-4CCE-8DA3-92DFA410A021}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F1E46343-732B-43A0-A504-AEEE8DC6C8F3} = {3504CB1F-6218-4030-8FE9-B5C7274F7C40}
+		{FF893C9B-6AA2-4610-B7E6-A75E90B888B3} = {3504CB1F-6218-4030-8FE9-B5C7274F7C40}
 	EndGlobalSection
 EndGlobal

@@ -5,4 +5,9 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AniraPS.Clients\AniraPS.Clients.csproj" />
+    <ProjectReference Include="..\AniraSP.Core\AniraSP.BLL\AniraSP.BLL.csproj" />
+  </ItemGroup>
+
 </Project>

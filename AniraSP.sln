@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniraPS.Clients", "AniraPS.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpWebClient", "AniraSP.Core\HttpWebClient\HttpWebClient.csproj", "{FF893C9B-6AA2-4610-B7E6-A75E90B888B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniraSP.Database", "AniraSP.Core\AniraSP.Database\AniraSP.Database.csproj", "{A96A05DC-B7F8-41D5-A6FF-0CC5A6FB4B3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{FF893C9B-6AA2-4610-B7E6-A75E90B888B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF893C9B-6AA2-4610-B7E6-A75E90B888B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF893C9B-6AA2-4610-B7E6-A75E90B888B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A96A05DC-B7F8-41D5-A6FF-0CC5A6FB4B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A96A05DC-B7F8-41D5-A6FF-0CC5A6FB4B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A96A05DC-B7F8-41D5-A6FF-0CC5A6FB4B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A96A05DC-B7F8-41D5-A6FF-0CC5A6FB4B3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,5 +51,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{F1E46343-732B-43A0-A504-AEEE8DC6C8F3} = {3504CB1F-6218-4030-8FE9-B5C7274F7C40}
 		{FF893C9B-6AA2-4610-B7E6-A75E90B888B3} = {3504CB1F-6218-4030-8FE9-B5C7274F7C40}
+		{A96A05DC-B7F8-41D5-A6FF-0CC5A6FB4B3C} = {3504CB1F-6218-4030-8FE9-B5C7274F7C40}
 	EndGlobalSection
 EndGlobal

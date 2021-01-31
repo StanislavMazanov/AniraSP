@@ -2,7 +2,7 @@ CREATE TABLE [dbo].[OffersTemp](
     [Id] [bigint] IDENTITY(1,1) NOT NULL,
     [SiteId] [int] NOT NULL,
     [OfferId] [nvarchar](100) NOT NULL,
-    [OfferInfo] [xml] NOT NULL,
+    [OfferInfo] [nvarchar](4000) NOT NULL,
     [CreationDate] [datetime2](7) NOT NULL,
     CONSTRAINT [PK_OffersTemp] PRIMARY KEY CLUSTERED
 (

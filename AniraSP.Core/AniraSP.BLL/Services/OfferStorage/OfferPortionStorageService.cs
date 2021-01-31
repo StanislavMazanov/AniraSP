@@ -75,7 +75,7 @@ namespace AniraSP.BLL.Services.OfferStorage {
                 if (_queueOffers.Count >= OfferPortions) {
                     List<AniraSpOffer> offersToCommit = _queueOffers.Take(OfferPortions).Select(x => x.Value).ToList();
                     foreach (AniraSpOffer item in offersToCommit) {
-                        _queueOffers.TryRemove(item.Id, out AniraSpOffer _);
+                        _queueOffers.TryRemove(item.OfferId, out AniraSpOffer _);
                     }
 
                     AttemptWrapperOffersUpdate(offersToCommit);
@@ -88,7 +88,7 @@ namespace AniraSP.BLL.Services.OfferStorage {
                     while (true) {
                         List<AniraSpOffer> offersToCommit = _queueOffers.Select(x => x.Value).ToList();
                         foreach (AniraSpOffer item in offersToCommit) {
-                            _queueOffers.TryRemove(item.Id, out AniraSpOffer _);
+                            _queueOffers.TryRemove(item.OfferId, out AniraSpOffer _);
                         }
 
                         AttemptWrapperOffersUpdate(offersToCommit);
@@ -123,7 +123,7 @@ namespace AniraSP.BLL.Services.OfferStorage {
         private void AddOffer(AniraSpOffer offer) {
             if (offer == null) return;
 
-            _queueOffers.AddOrUpdate(offer.Id, offer, (_, _) => offer);
+            _queueOffers.AddOrUpdate(offer.OfferId, offer, (_, _) => offer);
         }
     }
 }

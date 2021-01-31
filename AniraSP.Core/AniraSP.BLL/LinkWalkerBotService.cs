@@ -33,7 +33,7 @@ namespace AniraSP.BLL {
             _htmlParser = new HtmlParser();
         }
 
-        public virtual void RunScrappy() { }
+        public abstract Task RunScrappy();
 
         public void GenerateYaMarketXml(string[] links) {
             if (links == null)

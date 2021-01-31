@@ -6,8 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AniraPS.Clients\AniraPS.Clients.csproj" />
+    <ProjectReference Include="..\AniraSP.Clients\AniraSP.Clients.csproj" />
     <ProjectReference Include="..\AniraSP.Core\AniraSP.BLL\AniraSP.BLL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
   </ItemGroup>
 
 </Project>

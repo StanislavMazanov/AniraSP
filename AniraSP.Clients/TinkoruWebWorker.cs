@@ -24,12 +24,12 @@ namespace AniraPS.Clients {
         }
 
         public override AniraSpOffer GetOfferData(WebPageResponse webPageResponse) {
-            var param = new List<KeyValuePair<string, string>>();
-            param.Add(new KeyValuePair<string, string>("Price", "25.00"));
+            var param = new List<OfferParam>();
+            param.Add(new OfferParam {Name = "Price", Value = "25.00"});
 
             var offer = new AniraSpOffer {
-                Id = _productId,
-                Params = param
+                OfferId = _productId,
+                OfferParams = param
             };
             return offer;
         }

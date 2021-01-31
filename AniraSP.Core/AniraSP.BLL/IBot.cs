@@ -1,5 +1,7 @@
+using System.Threading.Tasks;
+
 namespace AniraSP.BLL {
     public interface IBot {
-        void RunScrappy();
+        Task RunScrappy();
     }
 }

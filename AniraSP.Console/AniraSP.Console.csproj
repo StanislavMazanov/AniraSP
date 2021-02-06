@@ -8,10 +8,20 @@
   <ItemGroup>
     <ProjectReference Include="..\AniraSP.Clients\AniraSP.Clients.csproj" />
     <ProjectReference Include="..\AniraSP.Core\AniraSP.BLL\AniraSP.BLL.csproj" />
+    <ProjectReference Include="..\AniraSP.DAL.Adapter\AniraSP.DAL.Adapter.csproj" />
+    <ProjectReference Include="..\AniraSP.Utilities\AniraSP.Utilities.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.1.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

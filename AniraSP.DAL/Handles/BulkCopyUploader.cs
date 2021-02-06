@@ -1,24 +1,21 @@
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
-using AniraSP.BLL.Models;
-using AniraSP.DAL;
+using AniraSP.DAL.Domain;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using AniraSP.Utilities.Storage;
 using Newtonsoft.Json;
 
-namespace AniraSP.PerformanceTest {
-    public class PortionUploader : StorageUploader<AniraSpOffer> {
+namespace AniraSP.DAL.Handles {
+    public class BulkCopyUploader : IBulkCopyUploader {
         private readonly AniraSpDbContext _aniraSpDbContext;
 
-        public PortionUploader(AniraSpDbContext aniraSpDbContext) {
+        public BulkCopyUploader(AniraSpDbContext aniraSpDbContext) {
             _aniraSpDbContext = aniraSpDbContext;
-            OfferPortions = 100000;
         }
 
-        public override void UpdateToStorage(List<AniraSpOffer> offers) {
+
+        public void Upload(OffersTemp[] offers) {
             // connect to SQL
 
             string connectionString = _aniraSpDbContext.Database.GetConnectionString();
@@ -46,7 +43,7 @@ namespace AniraSP.PerformanceTest {
             dataTable.Columns.Add("SiteId", typeof(int));
             dataTable.Columns.Add("OfferId", typeof(string));
             dataTable.Columns.Add("OfferInfo", typeof(string));
-            foreach (AniraSpOffer offer in offers) {
+            foreach (OffersTemp offer in offers) {
                 string offerInfo = JsonConvert.SerializeObject(offer);
                 DataRow row = dataTable.NewRow();
                 row[0] = 1;
@@ -54,6 +51,7 @@ namespace AniraSP.PerformanceTest {
                 row[2] = offerInfo;
                 dataTable.Rows.Add(row);
             }
+
             loader.BulkCopyTimeout = 60 * 10;
             var stopWatch = new Stopwatch();
             stopWatch.Start();

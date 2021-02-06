@@ -16,7 +16,6 @@ namespace AniraSP.Console {
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken) {
-            // var storage = new FakeStorage();
             var bot = new TinkoruBot(_storage, new DefaultLogger(), new BotOptions());
             await bot.RunScrappy();
         }

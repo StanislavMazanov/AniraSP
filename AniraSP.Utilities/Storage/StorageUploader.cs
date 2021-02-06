@@ -76,8 +76,8 @@ namespace AniraSP.Utilities.Storage {
             _saveOffersWorker.Wait();
         }
 
-        public void AddRange(IEnumerable<T> siteCash) {
-            foreach (T item in siteCash) {
+        public void AddRange(IEnumerable<T> offers) {
+            foreach (T item in offers) {
                 Add(item);
             }
         }

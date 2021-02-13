@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniraSP.Utilities", "AniraS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniraSP.DAL.Adapter", "AniraSP.DAL.Adapter\AniraSP.DAL.Adapter.csproj", "{EE6F32DB-42ED-4BCE-A8E0-67EA0CEC465A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{68242991-E081-46FE-9288-19D154CA502D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniraSP.WebAPI", "AniraSP.WebAPI\AniraSP.WebAPI.csproj", "{68242991-E081-46FE-9288-19D154CA502D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

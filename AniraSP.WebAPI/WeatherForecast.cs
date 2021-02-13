@@ -2,7 +2,7 @@ using System;
 
 namespace WebAPI {
     public class WeatherForecast {
-        public DateTime Date { get; set; }
+        public DateTime DateOff { get; set; }
 
         public int TemperatureC { get; set; }
 

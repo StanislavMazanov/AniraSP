@@ -5,12 +5,14 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\AniraSP.Utilities\AniraSP.Utilities.csproj" />
       <ProjectReference Include="..\HttpWebClient\HttpWebClient.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="AngleSharp" Version="1.0.0-alpha-844" />
       <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+      <PackageReference Include="NLog" Version="4.7.7" />
     </ItemGroup>
 
 </Project>

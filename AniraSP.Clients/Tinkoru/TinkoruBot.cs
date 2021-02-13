@@ -1,16 +1,21 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using AniraSP.BLL;
 using AniraSP.BLL.Logging;
 using AniraSP.BLL.Models;
 using AniraSP.BLL.Services.OfferStorage;
 
-namespace AniraPS.Clients {
+namespace AniraPS.Clients.Tinkoru {
     public class TinkoruBot : LinkWalkerBotService<TinkoruWebWorker> {
         public TinkoruBot(IOfferStorageWorker storage, ILog eventLogger, BotOptions botOptions) : base(storage,
-            eventLogger, botOptions) { }
+            eventLogger, botOptions) {
+            BotOptions.TimeOutPage = 10000;
+
+
+        }
 
         public override Task RunScrappy() {
-            var links = new[] {"https://www.tinko.ru/catalog/product/212111/"};
+            string[] links = new TinkoruLinksInCatFinder(BotOptions).GetProductsLinks();
             GenerateYaMarketXml(links);
             return Task.CompletedTask;
         }

@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
-using AngleSharp;
 using AniraSP.BLL.Models;
 
-namespace AniraPS.Clients {
+namespace AniraPS.Clients.Tinkoru {
     public class TinkoruWebWorker : WebWorker {
         private string _productId;
 

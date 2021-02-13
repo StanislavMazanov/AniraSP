@@ -6,7 +6,7 @@ using AniraSP.BLL.Models;
 using HttpWebClient;
 
 namespace AniraSP.BLL.Utils {
-    public class WebUtils {
+    public static class WebUtils {
         private static HttpWebClientV2 InitHttpClient(BotOptions botOptions) {
             return new() {
                 UseProxy = botOptions.UseProxy,

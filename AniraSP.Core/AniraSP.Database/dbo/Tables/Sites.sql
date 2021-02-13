@@ -1,0 +1,12 @@
+CREATE TABLE [dbo].[Sites](
+    [Id] [int] NOT NULL,
+    [Name] [nchar](10) NOT NULL,
+    [Settings] [nvarchar](4000) NOT NULL,
+    [IsActive] [bit] NOT NULL,
+    [SiteUrl] [nvarchar](100) NOT NULL,
+    CONSTRAINT [PK_Sites] PRIMARY KEY CLUSTERED
+(
+[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+    ) ON [PRIMARY]
+    GO

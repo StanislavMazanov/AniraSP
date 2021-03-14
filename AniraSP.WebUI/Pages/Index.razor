@@ -1,0 +1,11 @@
+﻿@page "/"
+@inject IToastService ToastService
+
+@attribute [Authorize]
+<h1>Welcome to AniraSP</h1>
+<AuthorizeView>
+    <Authorized>
+        Welcome
+       <button class="btn btn-info" @onclick="@(() => ToastService.ShowInfo("I'm an INFO message"))">Info Toast</button>
+    </Authorized>
+</AuthorizeView>

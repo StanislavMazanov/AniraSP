@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\AdminLTE" />
+      <Folder Include="wwwroot\Plugins\BlazoredToast" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\AniraSP.DAL\AniraSP.DAL.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Autofac" Version="6.1.0" />
+      <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+      <PackageReference Include="AutoMapper" Version="10.1.1" />
+      <PackageReference Include="Blazored.Toast" Version="3.1.2" />
+    </ItemGroup>
+
+</Project>

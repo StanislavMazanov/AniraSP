@@ -1,9 +1,10 @@
 CREATE TABLE [dbo].[Sites](
-    [Id] [int] NOT NULL,
+    [Id] [int] IDENTITY(1,1) NOT NULL,
     [Name] [nchar](10) NOT NULL,
     [Settings] [nvarchar](4000) NOT NULL,
     [IsActive] [bit] NOT NULL,
     [SiteUrl] [nvarchar](100) NOT NULL,
+    [Shard] [int] NOT NULL,
     CONSTRAINT [PK_Sites] PRIMARY KEY CLUSTERED
 (
 [Id] ASC

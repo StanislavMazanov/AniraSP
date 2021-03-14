@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniraSP.Utilities", "AniraS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniraSP.DAL.Adapter", "AniraSP.DAL.Adapter\AniraSP.DAL.Adapter.csproj", "{EE6F32DB-42ED-4BCE-A8E0-67EA0CEC465A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniraSP.WebAPI", "AniraSP.WebAPI\AniraSP.WebAPI.csproj", "{68242991-E081-46FE-9288-19D154CA502D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniraSP.WebUI", "AniraSP.WebUI\AniraSP.WebUI.csproj", "{106287DC-3086-4138-8CDD-18276A6ABC48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,10 +71,10 @@ Global
 		{EE6F32DB-42ED-4BCE-A8E0-67EA0CEC465A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE6F32DB-42ED-4BCE-A8E0-67EA0CEC465A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE6F32DB-42ED-4BCE-A8E0-67EA0CEC465A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{68242991-E081-46FE-9288-19D154CA502D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68242991-E081-46FE-9288-19D154CA502D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68242991-E081-46FE-9288-19D154CA502D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68242991-E081-46FE-9288-19D154CA502D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{106287DC-3086-4138-8CDD-18276A6ABC48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{106287DC-3086-4138-8CDD-18276A6ABC48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{106287DC-3086-4138-8CDD-18276A6ABC48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{106287DC-3086-4138-8CDD-18276A6ABC48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

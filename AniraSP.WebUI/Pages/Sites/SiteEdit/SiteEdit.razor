@@ -1,0 +1,65 @@
+@page "/Site/{SiteId}"
+@using AniraSP.WebUI.Data
+@attribute [Authorize]
+<div class="row">
+    <div class="col-12">
+        <!-- interactive chart -->
+        <div class="card card-outline @(SiteEditViewModel.SiteViewDto.IsActive ? "card-success" : "card-danger")">
+            <div class="card-header">
+                <h3 class="card-title">
+                    <i class="fas fa-table"></i>
+                    ID:@SiteEditViewModel.SiteViewDto.Id @SiteEditViewModel.SiteViewDto.Name
+                </h3>
+                <div class="card-tools">
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Action</label>
+                            <div>
+                                <input type="checkbox" @bind="SiteEditViewModel.SiteViewDto.IsActive">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" @bind-value="SiteEditViewModel.SiteViewDto.Name" placeholder="Name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Time to start</label><input type="time" @bind="SiteEditViewModel.SiteViewDto.StartTime" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Url</label>
+                            <input type="text" @bind="SiteEditViewModel.SiteViewDto.Url" placeholder="Url" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Shard</label>
+                            <input type="text" @bind="SiteEditViewModel.SiteViewDto.Shard" placeholder="Shard" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Number of threads</label>
+                            <input type="text" @bind="SiteEditViewModel.SiteViewDto.NumberOfThreads" placeholder="Shard" class="form-control">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary" @onclick="async () => await SiteEditViewModel.SaveAsync()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+@page "/site"
+@using AniraSP.WebUI.Data
+@attribute [Authorize]
+<div class="row">
+    <div class="col-12">
+        <!-- interactive chart -->
+        <div class="card card-primary card-outline">
+            <div class="card-header">
+                <h3 class="card-title">
+                    <i class="fas fa-table"></i>
+                    Sites
+                </h3>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-block btn-sm bg-gradient-success" @onclick="() => SitesModel.AddSite()">
+                        <i class="fas fa-plus"></i>
+                        Add site
+                    </button>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Url</th>
+                        <th>Start time</th>
+                        <th style="width: 40px">Status</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @if (SitesModel.Sites != null) {
+                        foreach (SiteViewModel siteData in SitesModel.Sites) {
+                            <tr @onclick="() => SitesModel.SiteOnClick(siteData.Id)">
+                                <td>@siteData.Id</td >
+                                <td>@siteData.Name</td >
+                                <td>@siteData.Url</td>
+                                <td>@siteData.StartTime</td>
+                                <td>
+                                    <span class="badge @(siteData.IsActive ? "bg-success" : "bg-danger")">@(siteData.IsActive ? "Active" : "Disable")</span>
+                                </td>
+
+                            </tr>
+                        }
+                    }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
